@@ -18,8 +18,6 @@ namespace LoginForm
 
         private void btnValidate_Click(object sender, EventArgs e)
         {
-            string @username = "bibek.singh";
-            string @password = "217CC9268199117MaY!";
             SqlConnection conn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Login;Integrated Security=True;TrustServerCertificate=True");
             conn.Open();
             String query = "SELECT COUNT(*) FROM Login_all WHERE username  = @username AND password = @password";
