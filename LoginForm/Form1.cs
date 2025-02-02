@@ -11,6 +11,7 @@ namespace LoginForm
             InitializeComponent();
         }
 
+        /* This function closes the form */
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
