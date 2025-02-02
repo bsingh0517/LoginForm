@@ -16,6 +16,9 @@ namespace LoginForm
             this.Close();
         }
 
+        /*
+        This function validates the username and password present in the database.
+        */
         private void btnValidate_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=Login;Integrated Security=True;TrustServerCertificate=True");
