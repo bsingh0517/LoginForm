@@ -55,7 +55,7 @@
             btnValidate.Name = "btnValidate";
             btnValidate.Size = new Size(219, 69);
             btnValidate.TabIndex = 1;
-            btnValidate.Text = "Validate";
+            btnValidate.Text = "Log In";
             btnValidate.UseVisualStyleBackColor = true;
             btnValidate.Click += btnValidate_Click;
             // 

@@ -1,4 +1,5 @@
 using System.Data.SqlClient;
+using Enrollment_Center;
 using Microsoft.Data.SqlClient;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
@@ -33,11 +34,15 @@ namespace LoginForm
             if (count > 0)
             {
                 MessageBox.Show("Login Success!");
+                frmEnrollmentCenter form2 = new frmEnrollmentCenter();
+                form2.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Login Error!");
             }
         }
+        
     }
 }
